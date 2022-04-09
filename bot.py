@@ -73,11 +73,9 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/FilmygodHindiHDMovie"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/FilmygodHindiHDMovie")
+                        InlineKeyboardButton("Support Group", url="https://t.me/FilmygodHindiHDMovie")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                         InlineKeyboardButton("About Dev", callback_data="aboutdevs")
                     ]
                 ]
@@ -120,7 +118,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/JoinOT)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/FilmygodHindiHDMovie)",
                                      disable_web_page_preview=True)
             return
 
@@ -318,12 +316,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/filmygod/newfilesave")
-                    ],
-                    [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Go Home", callback_data="gotohome")
                     ]
                 ]
             )
@@ -337,11 +330,6 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/filmygod/newfilesave")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                         InlineKeyboardButton("Go Home", callback_data="gotohome")
                     ]
                 ]
@@ -360,7 +348,6 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Bots Channel", url="https://t.me/FilmygodHindiHDMovie")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                         InlineKeyboardButton("About Dev", callback_data="aboutdevs")
                     ]
                 ]
@@ -414,11 +401,9 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/FilmygodHindiHDMovie"),
                         InlineKeyboardButton("Bots Channel", url="https://t.me/FilmygodHindiHDMovie")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                         InlineKeyboardButton("About Dev", callback_data="aboutdevs")
                     ]
                 ]
