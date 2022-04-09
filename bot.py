@@ -73,10 +73,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/FilmygodHindiHDMovie")
-                    ],
-                    [
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Support Channel", url="https://t.me/FilmygodHindiHDMovie")
                     ]
                 ]
             )
@@ -118,7 +115,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/FilmygodHindiHDMovie)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Channel](https://t.me/FilmygodHindiHDMovie)",
                                      disable_web_page_preview=True)
             return
 
