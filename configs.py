@@ -34,7 +34,7 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 👥 **Support Group:** [Linux Repositories](https://t.me/FilmygodHindiHDMovie)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/FilmygodHindiHDMovie)
+📢 **Updates Channel:** [FilmygodHindiHDMovie](https://t.me/FilmygodHindiHDMovie)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @FilmygodHindiHDMovie
